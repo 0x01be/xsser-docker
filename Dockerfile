@@ -8,8 +8,7 @@ RUN apk add --no-cache --virtual xsser-build-dependecies \
     py3-wheel \
     pkgconfig \
     curl-dev \
-    libffi-dev \
-    firefox-esr
+    libffi-dev
 
 RUN pip3 install --prefix=/opt/xsser \
     pycurl \
