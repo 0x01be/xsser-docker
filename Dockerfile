@@ -17,7 +17,8 @@ RUN pip3 install --prefix=/opt/xsser \
     gobject \
     cairocffi\
     selenium \
-    selenium-firefox
+    selenium-firefox \
+    setuptools
 
 ENV XSSER_REVISION master
 RUN git clone --depth 1 --branch ${XSSER_REVISION} https://github.com/epsylon/xsser.git /xsser
