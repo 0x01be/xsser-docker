@@ -6,6 +6,7 @@ COPY --from=build /opt/xsser/ /opt/xsser/
 
 RUN apk add --no-cache --virtual xsser-runtime-dependecies \
     python3 \
+    py3-setuptools \
     curl \
     libffi \
     firefox-esr
@@ -17,5 +18,5 @@ USER xsser
 ENV PATH ${PATH}:/opt/xsser/bin/
 ENV PYTHONPATH /usr/lib/python3.8/site-packages/:/opt/xsser/lib/python3.8/site-packages/
 
-CMD "xsser"
+CMD "xsser --help"
 
