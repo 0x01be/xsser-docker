@@ -18,5 +18,5 @@ USER xsser
 ENV PATH ${PATH}:/opt/xsser/bin/
 ENV PYTHONPATH /usr/lib/python3.8/site-packages/:/opt/xsser/lib/python3.8/site-packages/
 
-CMD "xsser --help"
+CMD ["xsser", "--help"]
 
